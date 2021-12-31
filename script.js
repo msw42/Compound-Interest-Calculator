@@ -5,9 +5,9 @@ let r
 let t
 let n
 let A
-let TI
+let IE
 let totalAmountEl = document.getElementById("total-amount-display")
-let totalInterestEl = document.getElementById("total-interest-display")
+let interestEarnedEl = document.getElementById("interest-earned-display")
 
 function calculate() {
     P = document.getElementById("principal").value
@@ -25,9 +25,9 @@ function calculate() {
         A = A.toFixed(2)
         totalAmountEl.textContent = A
         A = parseFloat(A)
-        TI = A - P 
-        TI = TI.toFixed(2)
-        totalInterestEl.textContent = TI
+        IE = A - P 
+        IE = IE.toFixed(2)
+        interestEarnedEl.textContent = IE
     } else { 
         if (n === "annually") {
             n = 1
@@ -43,11 +43,11 @@ function calculate() {
         A = A.toFixed(2)
         totalAmountEl.textContent = A
         A = parseFloat(A)
-        TI = A - P 
-        TI = TI.toFixed(2)
-        totalInterestEl.textContent = TI
+        IE = A - P 
+        IE = IE.toFixed(2)
+        interestEarnedEl.textContent = IE
     }
-}
+  }
 
 
     

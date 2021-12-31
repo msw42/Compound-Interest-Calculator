@@ -47,6 +47,7 @@ form {
     border-radius: 0.75em;
     border: 3px solid black;
     transition: background 200ms linear;
+    outline: none;
 }
 #inputs-submission:hover {
     transform: scale(1.1);
@@ -140,7 +141,3 @@ form {
             font-size: 5.5em;
         }
     }
-
-
-
-

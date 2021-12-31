@@ -9,19 +9,19 @@
 <h1>Compound Interest Calculator</h1>
 <h2>Inputs</h2>
 <form>
-    <div id="principal-div" class="text-divs">
+    <div id="principal-div" class="form-divs">
         <label for="principal"> Principal: </label>
         <input id="principal" type="text" placeholder="1,000" >
     </div>
-    <div id="principal-div" class="text-divs">
+    <div id="principal-div" class="form-divs">
         <label for="rate"> Interest Rate (%): </label>
         <input id="rate" type="text" placeholder="3.4" >
     </div>
-    <div id="principal-div" class="text-divs">
+    <div id="principal-div" class="form-divs">
         <label for="time">Time Period (years): </label>
         <input id="time" type="text" placeholder="7.5" >
     </div>
-    <div class="text-divs">
+    <div class="form-divs">
         <label for="compound">Rate of Compounding:</label>
         <select name="compound" id="compound">
             <option value="annually">Annually</option>
@@ -34,11 +34,11 @@
 </form>
 <h2>Results</h2>
 <div id="results-container">
-    <div id="interest-earned" class="results-items">
-        <h3>Interest Earned:</h3>
-        <div id="interest-earned-display" class="results-displays"></div>
+    <div id="total-interest-container" class="results-items">
+        <h3>Total Interest:</h3>
+        <div id="total-interest-display" class="results-displays"></div>
     </div>
-    <div id="total-amount" class="results-items">
+    <div id="total-amount-container" class="results-items">
         <h3>Total Amount:</h3>
         <div id="total-amount-display" class="results-displays"></div>
     </div>

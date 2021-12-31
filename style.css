@@ -1,0 +1,146 @@
+/****************************************
+                        SET UP
+****************************************/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: roboto;
+    --secondary-color: rgb(9, 143, 9);
+    --hover-color: rgb(24, 202, 24);
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align:center;
+    padding: 5vw 0 1vw 0;
+}
+/****************************************
+                      INPUTS
+****************************************/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-divs {
+    display: flex;
+    width: 90vw;
+    max-width: 750px;
+    padding: 1vw;
+}
+.text-divs label {
+    flex-basis: 7em;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.text-divs input, select {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+#inputs-submission {
+    margin: 1.1vw;
+    padding: 0.75em 2em;
+    font-size: 1rem;
+    background: var(--secondary-color);
+    border-radius: 0.75em;
+    border: 3px solid black;
+    transition: background 200ms linear;
+}
+#inputs-submission:hover {
+    transform: scale(1.1);
+}
+/****************************************
+                      RESULTS
+****************************************/
+#results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.results-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 6em;
+    margin: 0 0 2vw 0;
+}
+.results-displays {
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+}
+/****************************************
+                    MEDIA QUERIES
+****************************************/
+@media (min-width: 600px) {
+/*******************
+        SET UP
+*******************/
+    h1 {
+        font-size: 2.75rem;
+    }
+    h2 {
+        font-size: 2.05rem
+    }
+/*******************
+         INPUTS
+*******************/
+    .text-divs label {
+        flex-basis: 12em;
+        font-size: 1.375rem;
+    }
+    #inputs-submission {
+        font-size: 1.18rem;
+    }
+/*******************
+         RESULTS
+*******************/
+    .results-items {
+        flex-basis: 9em;
+    }
+    .results-items h3{
+        font-size: 1.65rem;
+    }
+    .results-displays {
+        font-size: 4.5rem;
+    }
+}
+@media (min-width: 950px) {
+    /*******************
+            SET UP
+    *******************/
+        h1 {
+            font-size: 4.2rem;
+        }
+        h2 {
+            font-size: 2.8rem
+        }
+    /*******************
+             INPUTS
+    *******************/
+        .text-divs label {
+            flex-basis: 14em;
+            font-size: 1.6rem;
+        }
+        #inputs-submission {
+            font-size: 1.375rem;
+        }
+    /*******************
+             RESULTS
+    *******************/
+        .results-items {
+            flex-basis: 12em;
+        }
+        .results-items h3 {
+            font-size: 1.9rem;
+        }
+        .results-displays {
+            font-size: 5.5em;
+        }
+    }
+
+
+
+
